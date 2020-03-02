@@ -2,11 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33948c9d-582d-431e-91e4-74f7ccc6867a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/crown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/shopping-bag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cart-item/cart-item.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cart-item/cart-item.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/collection-item/collection-item.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/collection-item/collection-item.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/collection-preview/collection-preview.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/collection-preview/collection-preview.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/collections-overview/collections-overview.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/collections-overview/collections-overview.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/custom-button/custom-buttom.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/custom-button/custom-button.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/directory/directory.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form-input/form-input.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form-input/form-input.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu-item/menu-item.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu-item/menu-item.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sign-in/sign-in.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sign-in/sign-in.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sign-up/sign-up.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sign-up/sign-up.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/stripe-button/stripe-button.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/firebase/firebase.utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/checkout/checkout.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/checkout/checkout.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/collection/collection.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/collection/collection.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/homepage/homepage.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/homepage/homepage.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/shop/shop.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/sign-in-and-sign-up/sign-in-and-sign-up.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/sign-in-and-sign-up/sign-in-and-sign-up.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/cart/cart.actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/cart/cart.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/cart/cart.selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/cart/cart.types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/cart/cart.utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/directory/directory.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/directory/directory.selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/root-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/shop/shop.data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/shop/shop.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/shop/shop.selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/user/user.actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/user/user.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/user/user.selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/user/user.types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +98,12 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\react-context-api\src" />
+      <recent name="C:\Users\user\react-context-api\public" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -62,14 +129,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583161899926</updated>
-      <workItem from="1583161902845" duration="1696000" />
+      <workItem from="1583161902845" duration="2427000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1583163793214</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583163793214</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583164374708">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583164374708" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1583163789334">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583163789334" />
     <state x="541" y="257" key="Github.ShareDialog" timestamp="1583163706671">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -78,5 +165,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583163215129" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1583163797393">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583163797393" />
   </component>
 </project>
