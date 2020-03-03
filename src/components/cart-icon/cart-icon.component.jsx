@@ -1,30 +1,29 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
+import React, {useContext} from 'react';
+// Import the Context to enable us to set the hidden state
+import CartContext from "../../contexts/cart/cart.context";
 
-import { toggleCartHidden } from '../../redux/cart/cart.actions';
-import { selectCartItemsCount } from '../../redux/cart/cart.selectors';
-
-import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg';
+import {ReactComponent as ShoppingIcon} from '../../assets/shopping-bag.svg';
 
 import './cart-icon.styles.scss';
 
-const CartIcon = ({ toggleCartHidden, itemCount }) => (
-  <div className='cart-icon' onClick={toggleCartHidden}>
-    <ShoppingIcon className='shopping-icon' />
-    <span className='item-count'>{itemCount}</span>
-  </div>
-);
+// We remove the toggleCartHidden prop, as we will be
+// getting the properties from the Context instead
+// In order to use our useContext Hook, we need to
+// convert our component so that we're doing an
+// explicit return of the HTML content
+const CartIcon = ({itemCount}) => {
+    // We want to get the toggleHidden prop from our
+    // CartContext, as this is the function that
+    // triggers the state change. This will then be
+    // passed into the component's onClick function
+    const { toggleHidden } = useContext(CartContext);
 
-const mapDispatchToProps = dispatch => ({
-  toggleCartHidden: () => dispatch(toggleCartHidden())
-});
+    return (
+        <div className='cart-icon' onClick={toggleHidden}>
+            <ShoppingIcon className='shopping-icon'/>
+            <span className='item-count'>{itemCount}</span>
+        </div>
+    );
+};
 
-const mapStateToProps = createStructuredSelector({
-  itemCount: selectCartItemsCount
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(CartIcon);
+export default CartIcon;
