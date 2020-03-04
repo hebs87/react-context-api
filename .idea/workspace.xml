@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="33948c9d-582d-431e-91e4-74f7ccc6867a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/cart/cart.provider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/cart/cart.provider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/cart/cart.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/cart/cart.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/collections-overview/collections-overview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/collections-overview/collections-overview.component.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
       <workItem from="1583227606107" duration="4958000" />
       <workItem from="1583242397522" duration="7078000" />
       <workItem from="1583251493399" duration="1254000" />
-      <workItem from="1583312291802" duration="10761000" />
+      <workItem from="1583312291802" duration="11833000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1583163793214</created>
@@ -184,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583322367076</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Created cartTotal calculation functionality and amended CheckoutPage component to use new provider to access cartTotal from Context">
+      <created>1583324146103</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1583324146103</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +222,8 @@
     <MESSAGE value="Changed Checkout component to use new provider to access cartItems" />
     <MESSAGE value="Changed CheckoutItem component to use new provider to access addItem, removeItem and clearItemFromCart functionality from Context" />
     <MESSAGE value="Changed CartIcon component to use new provider to access cartItemCount from Context" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed CartIcon component to use new provider to access cartItemCount from Context" />
+    <MESSAGE value="Created cartTotal calculation functionality and amended CheckoutPage component to use new provider to access cartTotal from Context" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created cartTotal calculation functionality and amended CheckoutPage component to use new provider to access cartTotal from Context" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#JavaScript" timestamp="1583228767079">
@@ -232,10 +238,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583164374708" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1583322365538">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1583324142762">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583322365538" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583324142762" />
     <state x="417" y="126" key="EnvironmentVariablesDialog" timestamp="1583166803486">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -244,22 +250,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="541" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1583163706671" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1583323402368">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1583325025755">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583323402368" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1583323402368">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583325025755" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1583325025755">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583323402368" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1583323402368">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583325025755" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1583325025755">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583323402368" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1583323402368">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583325025755" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1583325025755">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583323402368" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583325025755" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1583244238888">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

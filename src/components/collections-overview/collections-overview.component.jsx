@@ -1,23 +1,28 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-
+import React, {useContext} from 'react';
 import CollectionPreview from '../collection-preview/collection-preview.component';
 
-import { selectCollectionsForPreview } from '../../redux/shop/shop.selectors';
+// Enables us to get the shop data from our Context
+import CollectionsContext from "../../contexts/collections/collections.context";
 
 import './collections-overview.styles.scss';
 
-const CollectionsOverview = ({ collections }) => (
-  <div className='collections-overview'>
-    {collections.map(({ id, ...otherCollectionProps }) => (
-      <CollectionPreview key={id} {...otherCollectionProps} />
-    ))}
-  </div>
-);
+// As we are using Context, we need to do an explicit return
+const CollectionsOverview = () => {
+    // We need to get the data from the CollectionsContext
+    const collectionsMap = useContext(CollectionsContext);
+    // We then need to map over the data and pull the
+    // relevant collections by the keys (same functionality
+    // that we had in the selector
+    const collections = Object.keys(collectionsMap).map(
+        key => collectionsMap[key]);
 
-const mapStateToProps = createStructuredSelector({
-  collections: selectCollectionsForPreview
-});
+    return (
+        <div className='collections-overview'>
+            {collections.map(({id, ...otherCollectionProps}) => (
+                <CollectionPreview key={id} {...otherCollectionProps} />
+            ))}
+        </div>
+    );
+};
 
-export default connect(mapStateToProps)(CollectionsOverview);
+export default CollectionsOverview;
