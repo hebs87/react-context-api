@@ -25,15 +25,6 @@ const Header = () => {
     // prop, which was passed into the Header
     // component from the App.js file
     const currentUser = useContext(CurrentUserContext);
-    // We want to store the hidden value of the Context
-    // here, so that we can propagate the changes to
-    // the relevant components that use it - this will
-    // be the default value that it was in our CartContext
-    const [hidden, setHidden] = useState(true);
-    // We then create a toggleHidden const that will be
-    // an anonymous function that sets the hidden value
-    // to the opposite of what it currently is - true to false
-    const toggleHidden = () => setHidden(!hidden);
 
     return (
         <div className='header'>
