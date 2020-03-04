@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="33948c9d-582d-431e-91e4-74f7ccc6867a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <workItem from="1583227606107" duration="4958000" />
       <workItem from="1583242397522" duration="7078000" />
       <workItem from="1583251493399" duration="1254000" />
-      <workItem from="1583312291802" duration="8559000" />
+      <workItem from="1583312291802" duration="8913000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1583163793214</created>
@@ -168,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583321651798</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Changed CheckoutItem component to use new provider to access addItem, removeItem and clearItemFromCart functionality from Context">
+      <created>1583321757668</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1583321757668</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +206,8 @@
     <MESSAGE value="Changed CartDropdown component to use new provider to pull cartItems" />
     <MESSAGE value="Changed CartItem component to use new provider to addItem" />
     <MESSAGE value="Changed Checkout component to use new provider to access cartItems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed Checkout component to use new provider to access cartItems" />
+    <MESSAGE value="Changed CheckoutItem component to use new provider to access addItem, removeItem and clearItemFromCart functionality from Context" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed CheckoutItem component to use new provider to access addItem, removeItem and clearItemFromCart functionality from Context" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#JavaScript" timestamp="1583228767079">
@@ -214,10 +222,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583164374708" />
-    <state x="8" y="0" key="CommitChangelistDialog2" timestamp="1583321649485">
+    <state x="8" y="0" key="CommitChangelistDialog2" timestamp="1583321756134">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="8" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583321649485" />
+    <state x="8" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583321756134" />
     <state x="417" y="126" key="EnvironmentVariablesDialog" timestamp="1583166803486">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

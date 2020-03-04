@@ -11,17 +11,18 @@ import './cart-icon.styles.scss';
 // In order to use our useContext Hook, we need to
 // convert our component so that we're doing an
 // explicit return of the HTML content
-const CartIcon = ({itemCount}) => {
+const CartIcon = () => {
     // We want to get the toggleHidden prop from our
     // CartContext, as this is the function that
     // triggers the state change. This will then be
     // passed into the component's onClick function
-    const { toggleHidden } = useContext(CartContext);
+    // We also want to get the cartItemsCount
+    const { toggleHidden, cartItemsCount } = useContext(CartContext);
 
     return (
         <div className='cart-icon' onClick={toggleHidden}>
             <ShoppingIcon className='shopping-icon'/>
-            <span className='item-count'>{itemCount}</span>
+            <span className='item-count'>{cartItemsCount}</span>
         </div>
     );
 };
