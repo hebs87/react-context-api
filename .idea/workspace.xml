@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33948c9d-582d-431e-91e4-74f7ccc6867a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/contexts/directory/directory.context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/directory/directory.data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/collections-overview/collections-overview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/collections-overview/collections-overview.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +84,7 @@
       <workItem from="1583227606107" duration="4958000" />
       <workItem from="1583242397522" duration="7078000" />
       <workItem from="1583251493399" duration="1254000" />
-      <workItem from="1583312291802" duration="11833000" />
+      <workItem from="1583312291802" duration="13523000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1583163793214</created>
@@ -189,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583324146103</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Amended CollectionsOverview component to use CollectionsContext to access and map over collections in SHOP_DATA">
+      <created>1583325078824</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1583325078824</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +232,8 @@
     <MESSAGE value="Changed CheckoutItem component to use new provider to access addItem, removeItem and clearItemFromCart functionality from Context" />
     <MESSAGE value="Changed CartIcon component to use new provider to access cartItemCount from Context" />
     <MESSAGE value="Created cartTotal calculation functionality and amended CheckoutPage component to use new provider to access cartTotal from Context" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created cartTotal calculation functionality and amended CheckoutPage component to use new provider to access cartTotal from Context" />
+    <MESSAGE value="Amended CollectionsOverview component to use CollectionsContext to access and map over collections in SHOP_DATA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amended CollectionsOverview component to use CollectionsContext to access and map over collections in SHOP_DATA" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#JavaScript" timestamp="1583228767079">
@@ -238,10 +248,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583164374708" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1583324142762">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1583325077495">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583324142762" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583325077495" />
     <state x="417" y="126" key="EnvironmentVariablesDialog" timestamp="1583166803486">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -274,9 +284,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583251350467" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583322406188">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583326918677">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583322406188" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583326918677" />
   </component>
 </project>
