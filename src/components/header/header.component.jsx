@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
 import {auth} from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.component';
@@ -7,7 +7,7 @@ import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 // This enables us to get the currentUser state
 import CurrentUserContext from "../../contexts/current-user/current-user.context";
 // This enables us to use Context for the toggleHidden value
-import CartContext from "../../contexts/cart/cart.context";
+import {CartContext} from "../../providers/cart/cart.provider";
 
 import {ReactComponent as Logo} from '../../assets/crown.svg';
 
@@ -25,6 +25,12 @@ const Header = () => {
     // prop, which was passed into the Header
     // component from the App.js file
     const currentUser = useContext(CurrentUserContext);
+    // We need to get the hidden value from our CartContext
+    // so that we can propagate the changes through to the
+    // CartIcon component, which will then set the hidden,
+    // state, pass it back up to the app, and the CartDropdown
+    // can then use it to show/hide
+    const {hidden} = useContext(CartContext);
 
     return (
         <div className='header'>
@@ -47,18 +53,7 @@ const Header = () => {
                         SIGN IN
                     </Link>
                 )}
-                <CartContext.Provider value={{
-                    // We need to wrap the CartIcon component with
-                    // the new Context.Provider and set the value
-                    // to an object in which the hidden property
-                    // goes to the hidden state that we set, and
-                    // the toggleHidden empty function goes to the
-                    // new function that we defined
-                    hidden,
-                    toggleHidden
-                }}>
-                    <CartIcon/>
-                </CartContext.Provider>
+                <CartIcon/>
             </div>
             {hidden ? null : <CartDropdown/>}
         </div>
