@@ -11,7 +11,7 @@ import './cart-dropdown.styles.scss';
 
 // Now that we are using Context, we need to switch the
 // rendered code over to use an explicit return instead
-const CartDropdown = ({history, dispatch}) => {
+const CartDropdown = ({history}) => {
     // We pull the cartItems and toggleHidden from our Context
     const {cartItems, toggleHidden} = useContext(CartContext);
 
