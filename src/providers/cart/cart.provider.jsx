@@ -4,7 +4,8 @@ import {
     addItemToCart,
     removeItemFromCart,
     filterItemFromCart,
-    getCartItemsCount
+    getCartItemsCount,
+    getCartTotal
 } from "./cart.utils";
 
 // Copy and paste the existing CartContext and modify it
@@ -38,7 +39,9 @@ export const CartContext = createContext({
     // clearItemFromCart will be an empty function
     clearItemFromCart: () => {},
     // cartItemsCount will initially be 0
-    cartItemsCount: 0
+    cartItemsCount: 0,
+    // cartItemsTotal will initially be 0
+    getCartTotal: 0
 });
 
 // This CartProvider component will wrap around the whole
@@ -55,8 +58,12 @@ const CartProvider = ({children}) => {
     const [cartItems, setCartItems] = useState([]);
     // We want access to our cartItemsCount, which will
     // have a default value of 0 - this state change will be
-    // triggered in the below effect
+    // triggered in the first effect below
     const [cartItemsCount, setCartItemsCount] = useState(0);
+    // We want access to our cartItemsTotal, which will
+    // have a default value of 0 - this state change will be
+    // triggered in the second effect below
+    const [cartTotal, setCartTotal] = useState(0);
     // addItem will be us calling setCartItems on the new array
     // of all the cartItems we want to update to - we leverage
     // the addItemsToCart cart util and pass in the item we want
@@ -80,12 +87,20 @@ const CartProvider = ({children}) => {
     // leverage the filterItemFromCart cart util instead
     const clearItemFromCart = item =>
         setCartItems(filterItemFromCart(cartItems, item));
-    // To calculate the cartItemsCount, we leverage the
-    // getCartItemsCount util, but we need to use this as
-    // an effect that gets fired any time the cartItems
-    // value updates - this means it needs to watch for this
+
+    // As both effects are watching the same state change,
+    // we can call them in the same useEffect Hook
     useEffect(() => {
+        // To calculate the cartItemsCount, we leverage the
+        // getCartItemsCount util, but we need to use this as
+        // an effect that gets fired any time the cartItems
+        // value updates - this means it needs to watch for this
         setCartItemsCount(getCartItemsCount(cartItems));
+        // To calculate the cartItemsTotal, we leverage the
+        // getCartItemsTotal util, but we need to use this as
+        // an effect that gets fired any time the cartItems
+        // value updates - this means it needs to watch for this
+        setCartTotal(getCartTotal(cartItems));
     }, [cartItems]);
 
     return(
@@ -100,6 +115,7 @@ const CartProvider = ({children}) => {
                 addItem,
                 removeItem,
                 cartItemsCount,
+                cartTotal,
                 clearItemFromCart
             }}
         >

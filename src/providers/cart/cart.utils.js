@@ -48,3 +48,14 @@ export const getCartItemsCount = cartItems =>
             accumalatedQuantity + cartItem.quantity,
         0
     );
+
+// This util will be used to calculate the total price
+// of the cart. It uses the similar functionality to
+// the getCartItemsCount function, but it also multiplies
+// the totals by the price
+export const getCartTotal = cartItems =>
+    cartItems.reduce(
+        (accumalatedQuantity, cartItem) =>
+            accumalatedQuantity + cartItem.quantity * cartItem.price,
+        0
+    );

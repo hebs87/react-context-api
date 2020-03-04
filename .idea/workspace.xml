@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="33948c9d-582d-431e-91e4-74f7ccc6867a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/cart/cart.provider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/cart/cart.provider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/cart/cart.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/cart/cart.utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +84,7 @@
       <workItem from="1583227606107" duration="4958000" />
       <workItem from="1583242397522" duration="7078000" />
       <workItem from="1583251493399" duration="1254000" />
-      <workItem from="1583312291802" duration="8913000" />
+      <workItem from="1583312291802" duration="10761000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1583163793214</created>
@@ -175,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583321757668</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Changed CartIcon component to use new provider to access cartItemCount from Context">
+      <created>1583322367076</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583322367076</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +216,8 @@
     <MESSAGE value="Changed CartItem component to use new provider to addItem" />
     <MESSAGE value="Changed Checkout component to use new provider to access cartItems" />
     <MESSAGE value="Changed CheckoutItem component to use new provider to access addItem, removeItem and clearItemFromCart functionality from Context" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed CheckoutItem component to use new provider to access addItem, removeItem and clearItemFromCart functionality from Context" />
+    <MESSAGE value="Changed CartIcon component to use new provider to access cartItemCount from Context" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed CartIcon component to use new provider to access cartItemCount from Context" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#JavaScript" timestamp="1583228767079">
@@ -222,10 +232,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583164374708" />
-    <state x="8" y="0" key="CommitChangelistDialog2" timestamp="1583321756134">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1583322365538">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="8" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583321756134" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583322365538" />
     <state x="417" y="126" key="EnvironmentVariablesDialog" timestamp="1583166803486">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -234,22 +244,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="541" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1583163706671" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1583321268982">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1583323402368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583321268982" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1583321268982">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583323402368" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1583323402368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583321268982" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1583321268982">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583323402368" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1583323402368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583321268982" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1583321268982">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583323402368" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1583323402368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583321268982" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583323402368" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1583244238888">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -258,9 +268,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583251350467" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583314931384">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583322406188">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583314931384" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583322406188" />
   </component>
 </project>
